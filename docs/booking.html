@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Купить билеты онлайн</title>
+    
+     <link rel="stylesheet" href="css/main.css">
+     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="top" class="heading-1">Клементинум - самая красивая библиотека в мире</h1>
+
+    <ul class="navigation">
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="photo.html">Фотогалерея</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="booking.html">Купить билеты онлайн</a></li>
+    </ul>
+
+    <h2 class="heading-2">Купить билеты онлайн</h2>
+
+    <form>
+
+        <h3>Вы гражданин Чешской Республики?</h3>
+
+        <input type="radio" id="type_yes" name="type_citizen" value="type_yes">
+        <label for="type_yes">Да</label><br>
+
+        <input type="radio" id="type_no" name="type_citizen" value="type_no">
+        <label for="type_no">Нет</label><br><br>
+
+        <h3>Основные данные</h3>
+
+        <label for="name">Ваше Ф.И.О</label>
+        <input type="text" name="fio" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Телефон</label>
+        <input type="text" name="phone" id="phone" required>
+        <br><br>
+
+        <label for="date">Дата посещения</label>
+        <input type="date" name="date" id="date" required>
+        <br><br>
+
+        <label for="type_tour">Тип тура</label>
+        <select name="type_tour" id="type_tour">
+            <option value="1">Без гида</option>
+            <option value="2">С гидом</option>
+        </select>
+        <br><br>
+
+        <label for="type_language">Язык тура</label>
+        <select name="type_language" id="type_language">
+            <option value="1">Чешский</option>
+            <option value="2">Английский</option>
+            <option value="3">Русский</option>
+        </select>
+        <br><br>
+
+        <label for="adults">Количество взрослых</label>
+        <select name="adults" id="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <label for="kids">Количество детей</label>
+        <select name="kids" id="kids">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <h3>Дополнительные опции</h3>
+
+        <input type="checkbox" id="option_1" name="option_1">
+        <label for="option_1">Услуги профессионального фотографа</label><br>
+
+        <input type="checkbox" id="option_2" name="option_2">
+        <label for="option_2">Услуги хранения вещей</label><br>
+
+        <input type="checkbox" id="option_3" name="option_3">
+        <label for="option_3">Хранение питомца во время экскурсии</label>
+        <br><br>
+
+        <label for="comment">Комментарий для покупки</label><br>
+        <textarea name="name" id="comment" cols="60" rows="4"></textarea>
+        <br><br>
+
+        <input class="btn" type="submit" value="Подтвердить покупку билета">
+
+    </form>
+
+    <p><a href="#top">Наверх</a></p>
+
+</body>
+
+</html>
